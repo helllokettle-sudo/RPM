@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore a new RPM Customs experience. Build a custom steering wheel and preview it in an interactive 3D studio and cockpit.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#101114">
+  <title>RPM Customs — Design your drive</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>CRAFTED FOR YOUR CAR. DESIGNED BY YOU.</span><span class="concept">DESIGN CONCEPT <i></i></span></div>
+  <header class="header">
+    <a class="wordmark" href="#home" aria-label="RPM Customs home"><img src="assets/rpm-logo.webp" alt="RPM Customs"></a>
+    <nav aria-label="Main navigation"><a href="#collection" data-home-anchor="collection">The collection</a><a href="#build">Build your wheel</a><a href="#process" data-home-anchor="process">The process</a></nav>
+    <div class="header-actions"><span class="location">NORWAY <span class="norway-flag" aria-hidden="true"></span></span><button class="text-button" id="saved-build" aria-label="Open saved build">My build <span class="save-count">0</span></button><a class="header-build" href="#build">Build yours <span>↗</span></a></div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="home-page">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="red-line"></span> CUSTOM STEERING WHEELS</p>
+          <h1>Make it<br>unmistakably<br><em>yours.</em></h1>
+          <p class="hero-description">The detail you see. The difference you feel.<br>Build a steering wheel that belongs in your car.</p>
+          <a class="button primary" href="#build">Design your wheel <span>↗</span></a>
+          <p class="hero-small">Choose your car. Explore your finish. See it in 3D.</p>
+        </div>
+        <div class="hero-visual">
+          <span class="hero-watermark" aria-hidden="true">RPM</span>
+          <img id="hero-photograph" class="hero-photograph" src="assets/wheel-cutout.webp" alt="RPM Customs Carbon M Edition steering wheel"><div id="hero-viewer" hidden class="canvas-host" role="img" aria-label="Interactive 3D carbon steering wheel. Drag to rotate." tabindex="0"></div>
+          <div class="hero-tag"><span class="live-dot"></span> <span id="hero-mode">RPM CARBON M EDITION</span></div>
+          <div class="hero-caption"><div><span class="small-label">THE SIGNATURE BUILD</span><strong>Carbon. Alcantara. Your signature.</strong></div><button class="circle-button" id="hero-turn" aria-label="Explore wheel in 3D">↻</button></div>
+          <span class="hero-drag">PRODUCT PHOTOGRAPH · EXPLORE 3D <span>↔</span></span>
+        </div>
+        <div class="hero-bottom"><span><i>01</i> VEHICLE SPECIFIC DESIGN</span><span><i>02</i> PREMIUM MATERIALS</span><span><i>03</i> YOUR PERSONAL FINISH</span></div>
+      </section>
+
+      <section class="brands" aria-label="Explore by brand"><p>BUILT AROUND<br><strong>YOUR CAR.</strong></p><div class="brand-links"><button data-brand-start="BMW">BMW</button><button data-brand-start="Mercedes">Mercedes-Benz</button><button data-brand-start="Audi">Audi</button><button data-brand-start="Volkswagen">Volkswagen</button><button data-brand-start="Porsche">Porsche</button><button data-brand-start="Lamborghini">Lamborghini</button><button data-brand-start="Tesla">Tesla</button><button data-brand-start="Toyota">Toyota</button><button data-brand-start="Nissan">Nissan</button></div><span class="brands-note">Nine brands<br>129 model / generation choices</span></section>
+
+      <section class="collection section-wrap" id="collection">
+        <div class="section-heading"><div><p class="eyebrow dark">A STARTING POINT. YOUR FINISH.</p><h2>Find your signature.</h2></div><a class="arrow-link" href="#build">Create your own <span>↗</span></a></div>
+        <div class="preset-grid">
+          <button class="preset-card" data-preset="signature"><div class="preset-image"><span class="preset-badge">THE ORIGINAL</span><img src="assets/rpm-grey-carbon.webp" alt="Black carbon wheel with red stitching" loading="lazy"><span class="preset-open">↗</span></div><div class="preset-info"><span>01 / CARBON SERIES</span><h3>Grey Carbon Edition</h3><p>Carbon · Perforated leather · LED display</p></div></button>
+          <button class="preset-card" data-preset="midnight"><div class="preset-image"><span class="preset-badge">AFTER DARK</span><img src="assets/rpm-blue-forged.webp" alt="Forged carbon wheel with blue stitching" loading="lazy"><span class="preset-open">↗</span></div><div class="preset-info"><span>02 / FORGED SERIES</span><h3>Blue Forged Edition</h3><p>Forged carbon · Dark grip · Ice blue detail</p></div></button>
+          <button class="preset-card" data-preset="heritage"><div class="preset-image"><span class="preset-badge">M PERFORMANCE</span><img src="assets/bmw-product.webp" alt="RPM Customs Carbon M Edition wheel" loading="lazy"><span class="preset-open">↗</span></div><div class="preset-info"><span>03 / M PERFORMANCE</span><h3>Carbon M Edition</h3><p>Twill carbon · Alcantara · M tricolor detail</p></div></button>
+        </div>
+      </section>
+
+      <section class="experience section-wrap">
+        <div class="experience-copy"><p class="eyebrow"><span class="red-line"></span> TAKE THE DRIVER’S SEAT</p><h2>Don’t imagine it.<br><em>Experience it.</em></h2><p>See how every finish comes together in a cockpit preview. Rotate the wheel in the studio, then see it from behind the dashboard.</p><a class="button light" href="#build" data-driver-start>Enter the build studio <span>↗</span></a></div>
+        <div class="experience-art" aria-hidden="true"><img class="experience-interior" src="assets/bmw.webp" alt="" loading="lazy"><img class="experience-product" src="assets/wheel-cutout.webp" alt="" loading="lazy"><span class="art-label">YOUR DESIGN. FROM YOUR PERSPECTIVE.</span></div>
+      </section>
+
+      <section class="process section-wrap" id="process"><div class="section-heading"><div><p class="eyebrow dark">FROM FIRST IDEA TO FINAL DETAIL</p><h2>A build that starts with you.</h2></div></div><div class="process-grid"><article><span>01</span><h3>Start with your car.</h3><p>Choose your model and generation. Find the wheel platform that fits your build.</p></article><article><span>02</span><h3>Make it personal.</h3><p>Explore materials, colors, stitching and upgrades. Every visible detail updates in 3D.</p></article><article><span>03</span><h3>See the whole picture.</h3><p>Switch to the cockpit. Review your specification and save your finished design.</p></article></div></section>
+      <section class="faq section-wrap"><p class="eyebrow dark">BEFORE YOU BUILD</p><h2>The finer details.</h2><details><summary>Can I preview the wheel inside my car?<span>+</span></summary><p>The prototype combines an interactive 3D wheel with nine photographic concept interiors. Each interior represents a brand; accurate model-specific scans and fitment data will be used in production.</p></details><details><summary>Which materials can I customize?<span>+</span></summary><p>Try twill carbon, forged carbon or leather for the rim, then choose leather or Alcantara grips, stitching colors, a center marker and optional upgrades.</p></details><details><summary>Can I place an order from this preview?<span>+</span></summary><p>This is a design prototype. You can save, share and download your configuration; it does not send an order or collect payment. Production pricing and fitment need RPM Customs approval.</p></details></section>
+      <section class="closing section-wrap"><p class="eyebrow">YOUR NEXT DRIVE STARTS HERE</p><h2>One wheel.<br>Every detail, yours.</h2><a class="button primary" href="#build">Start your build <span>↗</span></a></section>
+    </div>
+
+    <div id="build-page" hidden>
+      <div class="build-heading"><div><a class="breadcrumb" href="#home">← Back to RPM Customs</a><h1>Your wheel. <em>Your way.</em></h1></div><div class="build-heading-right"><span class="live-dot"></span> THE BUILD STUDIO<br><small>Explore your design in real time.</small></div></div>
+      <div class="build-layout">
+        <section class="visual-column" aria-label="Steering wheel preview">
+          <div class="viewer-toolbar"><div class="segmented" aria-label="Preview view"><button data-view="studio" aria-pressed="true">Studio</button><button data-view="driver" aria-pressed="false">In the car</button></div><div class="viewer-tools"><button id="lighting" class="tool-button" aria-label="Switch to night lighting">☀ <span>Day</span></button><button id="fullscreen" class="tool-button" aria-label="Expand preview">⛶</button></div></div>
+          <div class="preview-stage" id="preview-stage"><div class="preview-meta"><span class="small-label" id="viewer-model">BMW / G20</span><strong id="viewer-build">Signature Carbon</strong></div><div class="preview-live"><span class="live-dot"></span> LIVE 3D</div><button class="circle-button exit-preview" id="close-preview" aria-label="Close expanded preview">×</button><div id="build-viewer" class="canvas-host" role="img" aria-label="Custom steering wheel 3D preview. Drag or use arrow keys to rotate. Plus and minus keys zoom." tabindex="0"></div><div class="viewer-bottom"><span id="interaction-hint">Drag to rotate · Scroll to zoom</span><div><button class="circle-button" id="zoom-in" aria-label="Zoom in">+</button><button class="circle-button" id="zoom-out" aria-label="Zoom out">−</button><button class="circle-button" id="reset-view" aria-label="Reset camera">↺</button></div></div><p class="scene-disclaimer" id="scene-disclaimer">Concept wheel geometry · Final fitment subject to review</p></div>
+          <div class="spec-strip"><div><span>YOUR VEHICLE</span><strong id="spec-car">BMW 3 Series · G20</strong></div><div><span>RIM FINISH</span><strong id="spec-rim">Twill carbon</strong></div><div><span>GRIP</span><strong id="spec-grip">Perforated leather</strong></div><div><span>STITCHING</span><strong id="spec-stitch">Racing red</strong></div></div>
+          <div class="preview-note"><span>ⓘ</span><p>Interactive 3D wheel · Representative photo cockpit · Demo prices. Final fitment requires RPM confirmation.</p><button class="arrow-link" id="share-build">Share build ↗</button></div>
+          <div class="share-panel" hidden><label for="share-url">YOUR SHAREABLE BUILD LINK</label><input id="share-url" type="text" readonly aria-label="Shareable build link"><p>Use this link on the same server where the prototype is running.</p></div>
+        </section>
+        <aside class="config-panel" aria-label="Configuration options"><div class="panel-head"><span>YOUR CONFIGURATION</span><button id="reset-build" class="text-button">Reset</button></div><div class="step-tabs" role="tablist" aria-label="Build steps"><button role="tab" id="tab-0" aria-controls="options-content" data-step="0" aria-selected="true"><span>01</span>Car</button><button role="tab" id="tab-1" aria-controls="options-content" data-step="1" aria-selected="false"><span>02</span>Design</button><button role="tab" id="tab-2" aria-controls="options-content" data-step="2" aria-selected="false"><span>03</span>Details</button><button role="tab" id="tab-3" aria-controls="options-content" data-step="3" aria-selected="false"><span>04</span>Review</button></div><div id="options-content" role="tabpanel" aria-labelledby="tab-0"></div><div class="panel-summary"><div><span>DEMO ESTIMATE</span><strong id="build-price">NOK 8,490</strong><small>Illustrative pricing · Not a quote</small></div><button class="button primary" id="next-step">Next: Design <span>→</span></button></div></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer><a class="wordmark" href="#home" aria-label="RPM Customs home"><img src="assets/rpm-logo.webp" alt="RPM Customs"></a><p>Driven by detail.</p><span>RPM CUSTOMS WEBSITE CONCEPT · 2026</span><a href="#build">Design your wheel ↗</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="build-dialog" aria-labelledby="saved-title"><button class="dialog-close circle-button" aria-label="Close saved build">×</button><p class="eyebrow dark">YOUR SIGNATURE BUILD</p><h2 id="saved-title">Made yours.</h2><p class="dialog-intro">Your configuration is saved on this device. Download a copy to show RPM Customs.</p><div id="dialog-summary"></div><p class="dialog-note">Design preview only. No order has been placed. Final price and vehicle compatibility require confirmation.</p><div class="dialog-actions"><button class="button primary" id="download-build">Download build <span>↓</span></button><button class="button secondary" id="edit-build">Keep designing</button></div></dialog>
+  <noscript><div class="noscript">Enable JavaScript to explore the interactive prototype. No purchase is available on this preview.</div></noscript>
+</body>
+</html>
